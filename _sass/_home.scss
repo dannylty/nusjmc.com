@@ -34,13 +34,12 @@ body.background {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    padding: 20px;
     box-sizing: border-box;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .header .logo {
@@ -54,7 +53,7 @@ body.background {
 
 .inner-background {
     max-width: none; /* Override any inherited max-widths */
-    height: calc(100vh - 180px); /* Adjust height to fit the viewport, minus header and footer */
+    height: calc(100vh - 200px); /* Adjust height to fit the viewport, minus header and footer */
     display: block;
     object-fit: cover; /* Ensures the image scales correctly */
     margin-left: 50%; /* Move the image leftward */
@@ -63,7 +62,7 @@ body.background {
 
 .footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .footer img {
