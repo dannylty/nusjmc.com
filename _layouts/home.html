@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,27 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
-<body>
-    {{ page.content }}
+
+<body class="background">
+    <!-- Main content starts here -->
+    <div class="jmc-container">
+        <div class="jmc-container--inner">
+            <header class="header">
+                <img src="https://via.placeholder.com/150x50.png?text=Logo" alt="Logo" class="logo">
+            </header>
+            <main class="jmc-main">
+                {% include home_nav.html %}
+                <img src="./assets/images/bg_sp.jpg" alt="Inner Background" class="inner-background">
+                {{ page.content }}
+                <!-- Additional content can go here -->
+            </main>
+            
+           {% include footer.html %}
+        </div>
+    </div>
 </body>
+
+    
+    
+
 </html>
