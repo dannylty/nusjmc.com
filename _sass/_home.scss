@@ -74,7 +74,7 @@ body.background {
 /* Fixed menu styles without animation */
 .jmc-fix-menu {
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 25px;
     z-index: 20;
     font-family: 'PixelMplus12 Regular', sans-serif;
@@ -89,7 +89,7 @@ body.background {
 }
 
 .jmc-fix-menu ul li {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .jmc-fix-menu ul li a {
@@ -97,5 +97,5 @@ body.background {
     text-decoration: none;
     font-size: 18px;
     display: block;
-    padding: 10px 0;
+    padding: 2px 0;
 }
