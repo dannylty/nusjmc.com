@@ -1,0 +1,61 @@
+// _home.scss
+
+body.background {
+    background-image: url("../../assets/images/bg_sp_2.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.jmc-container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.jmc-container--inner {
+    width: 100%;
+    max-width: 600px; /* Max width for inner content on mobile */
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.jmc-main {
+    position: center;
+}
+
+.inner-background {
+    max-width: none; /* Override any inherited max-widths */
+    height: calc(100vh - 200px); /* Adjust height to fit the viewport, minus header and footer */
+    display: block;
+    object-fit: cover; /* Ensures the image scales correctly */
+    margin-left: 50%; /* Move the image leftward */
+    transform: translateX(-50%); /* Center the image horizontally */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer img {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+}

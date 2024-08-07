@@ -1,3 +1,5 @@
 url: "https://www.nusjmc.com"
 baseurl: ""
 title: "nusjmc"
+sass:
+    sass_dir: _sass
