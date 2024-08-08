@@ -56,6 +56,10 @@ body.background {
     height: auto;
 }
 
+.header-pc {
+    display: none; /* Hide by default (mobile view) */
+}
+
 .jmc-main {
     width: 100vw;
     margin: 0 -25px;
@@ -116,4 +120,63 @@ body.background {
     font-size: 18px;
     display: block;
     padding: 2px 0;
+}
+
+/* PC viewport styling */
+@media (min-width: 769px) {
+    .jmc-main {
+        background-image: url("../../assets/images/bg_pc.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header-pc {
+        display: block; /* Show in PC viewports */
+        position: absolute;
+        top: 40px;
+        left: 100px; /* Align with the nav menu */
+        z-index: 20;
+        padding: 10px 0;
+        font-family: 'PixelMplus12 Regular', sans-serif;
+    }
+
+    .header-pc h1 {
+        margin: 0;
+        padding: 0;
+        font-size: small;
+        color: #ffffff;
+    }
+
+    .header-pc img {
+        display: block;
+        max-width: 50%;
+        height: auto;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+        width: 100%;
+        z-index: 10;
+        text-align: left; /* Align footer content to the left */
+    }
+
+    .footer img {
+        margin-left: 0; /* Remove default margin */
+    }
+
+    .inner-background {
+        display: none; /* Hide the inner background in PC view */
+    }
+
+    .jmc-fix-menu {
+        left: 100px;
+        top: calc(70px + 5vw);
+    }
 }
