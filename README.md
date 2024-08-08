@@ -1,3 +1,7 @@
-Setup: https://jekyllrb.com/docs/installation/
+Setup: 
 
-Build: https://jekyllrb.com/docs/step-by-step/01-setup/
+Install Jekyll and bundler - https://jekyllrb.com/docs/installation/
+Run `bundle install` in root directory.
+
+Build:
+Run `jekyll serve` in root directory.
